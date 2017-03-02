@@ -1,3 +1,6 @@
+# for this package:
+test/output
+
 # Logs
 logs
 *.log

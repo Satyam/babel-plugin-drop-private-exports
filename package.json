@@ -1,0 +1,22 @@
+{
+  "name": "babel-plugin-drop-private-exports",
+  "version": "0.1.0",
+  "description": "A Babel plugin to drop exports meant only for testing.",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "babel test/samples --presets=es2015 --plugins=../../index.js --out-dir test/output",
+    "test": "mocha",
+    "build": "babel src/index.js --presets=es2015 --out-file index.js"
+  },
+  "keywords": [
+    "babel",
+    "plugin"
+  ],
+  "author": "Daniel Barreiro",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "mocha": "^3.2.0"
+  }
+}
